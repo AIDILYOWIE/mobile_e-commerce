@@ -1,5 +1,5 @@
 class EValidatior {
-  
+
   static String? validationEmail(String? value) {
     if (value == null || value.isEmpty) {
       return 'Email is required';
@@ -15,5 +15,26 @@ class EValidatior {
     return null;
    }
 
+  static String? validationPassword(String? value) {
+    if (value == null || value.isEmpty) {
+      return 'Password is required';
+    }
 
+    // Check for minimum password length
+    if (value.length < 6) {
+      return 'Password must be at least 6 characters long';
+    }
+
+    // Check for upppercase letters
+    if (!value.contains(RegExp(r'[A-Z]'))) {
+      return 'Password must contain at least one uppercase letter';
+    }
+
+    // Check for special characters
+    if (!value.contains(RegExp(r'[!@#$%^&*(),.?":{}|<>]'))) {
+      return 'Password must contain at least one special character';
+    }
+
+    return null;
+  }
 }
