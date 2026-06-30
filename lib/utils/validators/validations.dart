@@ -37,4 +37,21 @@ class EValidatior {
 
     return null;
   }
+
+  static String? validationPhoneNumber(String? value) {
+    if (value == null || value.isEmpty ) {
+      return 'Phone number is required';
+    }
+
+    // Regular expression for phone number validation (assuming a 10-digit US phone number format)
+    final phoneRegExp = RegExp(r'^\d{10}$');
+
+    if (!phoneRegExp.hasMatch(value)) {
+      return 'Invalid phone number format (10 digits required)';
+    }
+
+    return null;
+  }
+
+  // Add more validation methods as needed for other fields (e.g., name, address, etc.)
 }
