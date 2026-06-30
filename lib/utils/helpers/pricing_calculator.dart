@@ -9,4 +9,11 @@ class EPricingCalculator {
   double totalPrice = productPrice + taxAmount + shippingCost;
   return totalPrice;
  }
+
+ // calculate shipping cost
+ static double calculateShippingCost(double productPrice, String location) {
+  double shippingCost = getShippingsCost(location);
+  return shippingCost.toStringAsFixed(2);
+  }
+ 
 }
