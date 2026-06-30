@@ -20,16 +20,16 @@ class HttpClient {
     return _handleResponse(response);
   }
 
-  // // Helper method to make a PUT request
-  // static Future<Map<String, dynamic>> put(String endpoint, dynamic data) async {
-  //   final response = await http.put(
-  //     Uri.parse('$_baseUrl/$endpoint'),
-  //     headers: {'Content-Type': 'application/json'},
-  //     body: json.encode(data),
-  //   );
-  //   return _handleResponse(response);
-  // }
+  // Helper method to make a PUT request
+  static Future<Map<String, dynamic>> put(String endpoint, dynamic data) async {
+    final response = await http.put(
+      Uri.parse('$_baseUrl/$endpoint'),
+      headers: {'Content-Type': 'application/json'},
+      body: json.encode(data),
+    );
+    return _handleResponse(response);
+  }
 
-  // // Helper method to make a DELETE request
+  // Helper method to make a DELETE request
 
 }
