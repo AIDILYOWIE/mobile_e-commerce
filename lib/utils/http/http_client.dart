@@ -36,6 +36,13 @@ class HttpClient {
     return _handleResponse(response);
   }
 
-  
+  // Handle the HTTP response 
+  static Map<String, dynamic> _handleResponse(http.Response response) {
+    if (response.statusCode == 200) {
+      return json.decode(response.body);
+    } else {
+      throw Exception('Failed to load data: ${response.statusCode}');
+    }
+  }
 
 }
