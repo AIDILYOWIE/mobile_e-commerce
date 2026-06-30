@@ -23,5 +23,10 @@ class EPricingCalculator {
     return taxAmount.toStringAsFixed(2);
   }
  
- 
+  static double getTaxRateLocation(String location) {
+    // lookup the tax rate for the given location from a tax rate database or API
+    // return the appropriate tax rate
+
+    return 0.10; // example tax rate of 10%
+  }
 }
