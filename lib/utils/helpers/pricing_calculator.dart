@@ -15,5 +15,13 @@ class EPricingCalculator {
   double shippingCost = getShippingsCost(location);
   return shippingCost.toStringAsFixed(2);
   }
+
+  // Calculate tax 
+  static double calculateTax(double productPrice, String location) {
+    double taxRate = getTaxRateLocation(location);
+    double taxAmount = productPrice * taxRate;
+    return taxAmount.toStringAsFixed(2);
+  }
+ 
  
 }
