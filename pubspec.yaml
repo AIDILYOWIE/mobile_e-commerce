@@ -33,7 +33,7 @@ dependencies:
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
-  iconsax: ^0.0.8
+  iconsax_flutter: ^1.0.1
   cupertino_icons: ^1.0.8
 
   # State management
@@ -45,6 +45,8 @@ dependencies:
   intl: ^0.20.3
   logger: ^2.0.1
   url_launcher: ^6.1.12
+  flutter_native_splash: ^2.4.7
+  smooth_page_indicator: ^1.1.0
 
 dev_dependencies:
   flutter_test:
@@ -72,7 +74,7 @@ flutter:
   assets:
      - assets/logos/
      - assets/icons/brands/
-     - assets/images/
+     - assets/images/on_boardings/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
@@ -96,11 +98,6 @@ flutter:
            weight: 500
          - asset: assets/fonts/ElmsSans-Light.ttf
            weight: 300
-     - family: Trajan Pro
-       fonts:
-         - asset: fonts/TrajanPro.ttf
-         - asset: fonts/TrajanPro_Bold.ttf
-           weight: 700
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
