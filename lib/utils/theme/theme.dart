@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mobile_ecommerce/utils/theme/custom_theme/appbar_theme.dart';
 import 'package:mobile_ecommerce/utils/theme/custom_theme/bottom_sheet_theme.dart';
 import 'package:mobile_ecommerce/utils/theme/custom_theme/checkbox_theme.dart';
 import 'package:mobile_ecommerce/utils/theme/custom_theme/chip_theme.dart';
@@ -16,11 +17,11 @@ class EAppTheme {
     brightness: Brightness.light,
     primaryColor: Colors.blue,
     scaffoldBackgroundColor: Colors.white,
-    textTheme: ETextTheme.lightTextTheme,
+    textTheme: ETextTheme.darkTextTheme,
     elevatedButtonTheme: EElevatedButtonTheme.lightElevatedButtonTheme,
     outlinedButtonTheme: EOutlinedButtonTheme.lightOutlinedButtonTheme,
     inputDecorationTheme: ETextFormFieldTheme.lightInputDecorationTheme,
-    appBarTheme: EAppTheme.lightTheme,
+    appBarTheme: EAppBarTheme.lightAppBarTheme,
     bottomSheetTheme: EBottomSheetTheme.lightBottomSheetTheme,
     checkboxTheme: ECheckboxTheme.lightCheckboxTheme,
     chipTheme: EChipTheme.lightChipTheme,
@@ -31,11 +32,11 @@ class EAppTheme {
     brightness: Brightness.dark,
     primaryColor: Colors.blue,
     scaffoldBackgroundColor: Colors.black,
-    textTheme: ETextTheme.darkTextTheme,
+    textTheme: ETextTheme.lightTextTheme,
     elevatedButtonTheme: EElevatedButtonTheme.darkElevatedButtonTheme,
     outlinedButtonTheme: EOutlinedButtonTheme.darkOutlinedButtonTheme,
     inputDecorationTheme: ETextFormFieldTheme.darkInputDecorationTheme,
-    appBarTheme: EAppTheme.darkTheme,
+    appBarTheme: EAppBarTheme.darkAppBarTheme,
     bottomSheetTheme: EBottomSheetTheme.darkBottomSheetTheme,
     checkboxTheme: ECheckboxTheme.darkCheckboxTheme,
     chipTheme: EChipTheme.darkChipTheme,
