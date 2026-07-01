@@ -102,7 +102,7 @@ class EHelperFunctions {
   }
   
   static String getFormattedDate(DateTime date, {String format = 'dd MMM yyyy'} ) {
-    return DateFormat(format).format(date);
+    return DateFormat.format(date);
   }
   
   
