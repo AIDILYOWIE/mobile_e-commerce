@@ -1,7 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:iconsax_flutter/iconsax_flutter.dart';
-import 'package:mobile_ecommerce/features/authetication/controllers/controllers.onboarding/onboarding_controller.dart';
+import 'package:mobile_ecommerce/features/authetication/controllers/controllers/onboarding/onboarding_controller.dart';
 import 'package:mobile_ecommerce/utils/constants/colors.dart';
 import 'package:mobile_ecommerce/utils/constants/sizes.dart';
 import 'package:mobile_ecommerce/utils/device/device_utility.dart';

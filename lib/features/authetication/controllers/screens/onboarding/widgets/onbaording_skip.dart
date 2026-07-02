@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:mobile_ecommerce/features/authetication/controllers/controllers.onboarding/onboarding_controller.dart';
+import 'package:mobile_ecommerce/features/authetication/controllers/controllers/onboarding/onboarding_controller.dart';
 
-import '../../../../../utils/constants/sizes.dart';
-import '../../../../../utils/device/device_utility.dart';
+import '../../../../../../utils/constants/sizes.dart';
+import '../../../../../../utils/device/device_utility.dart';
 
 class OnBoardingSkip extends StatelessWidget {
   const OnBoardingSkip({

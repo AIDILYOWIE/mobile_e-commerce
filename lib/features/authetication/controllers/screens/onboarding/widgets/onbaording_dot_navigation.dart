@@ -1,11 +1,11 @@
 import 'package:flutter/cupertino.dart';
-import 'package:mobile_ecommerce/features/authetication/controllers/controllers.onboarding/onboarding_controller.dart';
+import 'package:mobile_ecommerce/features/authetication/controllers/controllers/onboarding/onboarding_controller.dart';
 import 'package:mobile_ecommerce/utils/constants/colors.dart';
 import 'package:mobile_ecommerce/utils/constants/sizes.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
-import '../../../../../utils/device/device_utility.dart';
-import '../../../../../utils/helpers/helper_functions.dart';
+import '../../../../../../utils/device/device_utility.dart';
+import '../../../../../../utils/helpers/helper_functions.dart';
 
 class onBoardingDotNavigation extends StatelessWidget {
   const onBoardingDotNavigation({
