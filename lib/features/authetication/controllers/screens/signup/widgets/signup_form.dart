@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:get/get_utils/src/extensions/string_extensions.dart';
 import 'package:iconsax_flutter/iconsax_flutter.dart';
 import 'package:mobile_ecommerce/common/widgets/login_signup/form_divider.dart';
+import 'package:mobile_ecommerce/features/authetication/controllers/screens/signup/email_verification.dart';
 import 'package:mobile_ecommerce/features/authetication/controllers/screens/signup/widgets/term_condition_checkbox.dart';
 import 'package:mobile_ecommerce/utils/constants/colors.dart';
 import 'package:mobile_ecommerce/utils/constants/sizes.dart';
@@ -92,7 +94,7 @@ class signup_form extends StatelessWidget {
           // Signup button
           SizedBox(
             width: double.infinity,
-            child: ElevatedButton(onPressed: () {}, child: const Text(ETexts.createAccount)),
+            child: ElevatedButton(onPressed: () =>  Get.to(() => const EmailVerification() ), child: const Text(ETexts.createAccount)),
           ),
 
           const SizedBox(height: ESizes.spaceBtwSections),
