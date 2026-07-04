@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax_flutter/iconsax_flutter.dart';
+import 'package:mobile_ecommerce/features/authetication/controllers/screens/password_configuration/forget_password.dart';
 import 'package:mobile_ecommerce/features/authetication/controllers/screens/signup/signup.dart';
 import 'package:mobile_ecommerce/utils/constants/sizes.dart';
 import 'package:mobile_ecommerce/utils/constants/text_strings.dart';
@@ -44,7 +45,7 @@ class ELoginForm extends StatelessWidget {
                   ],
                 ),
 
-                TextButton(onPressed: () {}, child: const Text(ETexts.forgetPasswordTitle)),
+                TextButton(onPressed: () => Get.to(() => const ForgetPassword() ) , child: const Text(ETexts.forgetPasswordTitle)),
               ],
             ),
             const SizedBox(height: ESizes.spaceBtwInputFields),
