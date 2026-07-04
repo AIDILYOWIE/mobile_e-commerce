@@ -39,7 +39,6 @@ class SuccessScreen extends StatelessWidget {
                 style: Theme.of(context).textTheme.labelMedium,
                 textAlign: TextAlign.center,
               ),
-              const SizedBox(height: ESizes.spaceBtwItems),
 
               const SizedBox(height: ESizes.spaceBtwSections),
               // Buttons
