@@ -1,16 +1,14 @@
-
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax_flutter/iconsax_flutter.dart';
 import 'package:mobile_ecommerce/features/authetication/controllers/screens/password_configuration/forget_password.dart';
 import 'package:mobile_ecommerce/features/authetication/controllers/screens/signup/signup.dart';
+import 'package:mobile_ecommerce/navigation_menu.dart';
 import 'package:mobile_ecommerce/utils/constants/sizes.dart';
 import 'package:mobile_ecommerce/utils/constants/text_strings.dart';
 
 class ELoginForm extends StatelessWidget {
-  const ELoginForm({
-    super.key,
-  });
+  const ELoginForm({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -45,17 +43,32 @@ class ELoginForm extends StatelessWidget {
                   ],
                 ),
 
-                TextButton(onPressed: () => Get.to(() => const ForgetPassword() ) , child: const Text(ETexts.forgetPasswordTitle)),
+                TextButton(
+                  onPressed: () => Get.to(() => const ForgetPassword()),
+                  child: const Text( ETexts.forgetPassword ),
+                ),
               ],
             ),
             const SizedBox(height: ESizes.spaceBtwInputFields),
 
             // Sign button
-            SizedBox(width: double.infinity, child: ElevatedButton(onPressed: () {}, child: const Text( ETexts.signIn ))),
+            SizedBox(
+              width: double.infinity,
+              child: ElevatedButton(
+                onPressed: () => Get.to(() => const NavigationMenu()),
+                child: const Text(ETexts.signIn),
+              ),
+            ),
             const SizedBox(height: ESizes.spaceBtwItems),
 
             // Create account
-            SizedBox(width: double.infinity, child: OutlinedButton(onPressed: () => Get.to(() => const SignupScreen()) , child: const Text( ETexts.createAccount ))),
+            SizedBox(
+              width: double.infinity,
+              child: OutlinedButton(
+                onPressed: () => Get.to(() => const SignupScreen()),
+                child: const Text(ETexts.createAccount),
+              ),
+            ),
             const SizedBox(height: ESizes.spaceBtwSections),
           ],
         ),

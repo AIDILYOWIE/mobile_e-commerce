@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax_flutter/iconsax_flutter.dart';
+import 'package:mobile_ecommerce/features/shop/screens/home/home.dart';
 import 'package:mobile_ecommerce/utils/constants/colors.dart';
 import 'package:mobile_ecommerce/utils/helpers/helper_functions.dart';
 
@@ -36,10 +37,10 @@ class NavigationMenu extends StatelessWidget {
 class NavigationController extends GetxController {
   final Rx<int> selectedIndex = 0.obs;
 
-  final screens = [
-    Center(child: Text('Home Screen')),
-    Center(child: Text('Store Screen')),
-    Center(child: Text('Wishlist Screen')),
-    Center(child: Text('Profile Screen')),
+  final List<Widget> screens = [
+   const  HomeScreen(),
+    Container(child: Text('Store Screen')),
+    Container(child: Text('Wishlist Screen')),
+    Container(child: Text('Profile Screen')),
   ];
 }
