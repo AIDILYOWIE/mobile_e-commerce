@@ -34,6 +34,7 @@ class EPrimaryHeaderContainer extends StatelessWidget {
                   backgroundColor: EColors.textWhite.withOpacity(0.1),
                 ),
               ),
+              child
             ],
           ),
         ),
