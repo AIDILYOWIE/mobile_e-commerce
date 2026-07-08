@@ -13,4 +13,7 @@ class EImages {
   static const String onBoardingImage1 = "assets/images/on_boardings/Online Delivery Service.gif";
   static const String onBoardingImage2 = "assets/images/on_boardings/Ordering Online Food.gif";
   static const String onBoardingImage3 = "assets/images/on_boardings/Tracking Order Online.gif";
+
+  // Categories 
+  static const String sportCategorie = "assets/images/categories/category_1.png";
 }
