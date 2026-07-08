@@ -16,12 +16,11 @@ class ECartCounterIcon extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        IconButton(onPressed: (){}, icon:  Icon(Iconsax.shopping_bag, color: iconColor ,)),
+        IconButton(onPressed: (){}, icon:  Icon(Iconsax.shopping_bag_copy, color: iconColor ,)),
         Positioned(
           right: 6,
           top: 3,
           child: Container(
-            
             width: 18,
             height: 18,
             decoration: BoxDecoration(
