@@ -12,7 +12,7 @@ class ERoundedImage extends StatelessWidget {
     this.height,
     this.applyImageRadius = false,
     required this.ImageUrl,
-    this.fit = BoxFit.contain,
+    this.fit = BoxFit.cover,
     this.backgroundColor = EColors.light,
     this.isNetworkImage = false,
     this.borderRadius = ESizes.md
