@@ -5,6 +5,8 @@ import 'package:mobile_ecommerce/common/widgets/costume_shapes/containers/circul
 import 'package:mobile_ecommerce/common/widgets/costume_shapes/containers/primary_header_containers.dart';
 import 'package:mobile_ecommerce/common/widgets/costume_shapes/containers/search_container.dart';
 import 'package:mobile_ecommerce/common/widgets/images/e_rounded_image.dart';
+import 'package:mobile_ecommerce/common/widgets/layouts/grid_layout.dart';
+import 'package:mobile_ecommerce/common/widgets/products/product_cards/product_card_vertical.dart';
 import 'package:mobile_ecommerce/common/widgets/texts/section_heading.dart';
 import 'package:mobile_ecommerce/features/shop/screens/home/widgets/home_appbar.dart';
 import 'package:mobile_ecommerce/features/shop/screens/home/widgets/home_categorie.dart';
@@ -40,17 +42,11 @@ class HomeScreen extends StatelessWidget {
 
                   // Categories
                   Padding(
-                    padding: EdgeInsets.symmetric(
-                      horizontal: ESizes.defaultSpace,
-                    ),
+                    padding: EdgeInsets.symmetric(horizontal: ESizes.defaultSpace),
                     child: Column(
                       children: [
                         // Header
-                        ECategorieHeader(
-                          title: "Popular Categoris",
-                          showActionButton: false,
-                          textColor: EColors.white,
-                        ),
+                        ECategorieHeader(title: "Popular Categoris", showActionButton: false, textColor: EColors.white),
                         const SizedBox(height: ESizes.spaceBtwItems),
 
                         // Categories
@@ -65,8 +61,15 @@ class HomeScreen extends StatelessWidget {
             // Body section
             Padding(
               padding: const EdgeInsets.all(ESizes.defaultSpace),
-              child: EPromoSlider(
-                banners: [EImages.banner1, EImages.banner2, EImages.banner3],
+              child: Column(
+                children: [
+                  // Promo slider
+                  EPromoSlider(banners: [EImages.banner1, EImages.banner2, EImages.banner3]),
+                  const SizedBox(height: ESizes.spaceBtwSections),
+
+                  // Product populer
+                  EGridLayout(itemCount: 4, itemBuilder: (_, index) => const EProductCardVertical()),
+                ],
               ),
             ),
           ],
@@ -75,3 +78,5 @@ class HomeScreen extends StatelessWidget {
     );
   }
 }
+
+
