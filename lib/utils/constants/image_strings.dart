@@ -21,4 +21,17 @@ class EImages {
   static const String banner1 = "assets/images/banners/banner-1.jpg";
   static const String banner2 = "assets/images/banners/banner-2.png";
   static const String banner3 = "assets/images/banners/banner-3.png";
+
+  // Products
+  static const String productJacket1 = "assets/images/products/jacket_1.jpg";
+  static const String productJacket2 = "assets/images/products/jacket_2.jpg";
+  static const String productJacket3 = "assets/images/products/jacket_3.jpg";
+  static const String productShoes1 = "assets/images/products/shoes_1.jpg";
+  static const String productShoes2 = "assets/images/products/shoes_2.jpg";
+  static const String productShoes3 = "assets/images/products/shoes_3.jpg";
+  static const String productLegging1 = "assets/images/products/legging_1.jpg";
+  static const String productLegging2 = "assets/images/products/legging_2.jpg";
+  static const String productLegging3 = "assets/images/products/legging_3.jpg";
+
+
 }
