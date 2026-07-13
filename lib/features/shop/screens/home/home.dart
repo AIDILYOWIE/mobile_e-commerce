@@ -34,7 +34,6 @@ class HomeScreen extends StatelessWidget {
                   // Search Bar
                   ESearchContainer(
                     text: 'Search in store',
-                    icon: Iconsax.search_normal_copy,
                     showBorder: true,
                     showBackground: true,
                   ),
