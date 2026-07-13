@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax_flutter/iconsax_flutter.dart';
 import 'package:mobile_ecommerce/features/shop/screens/home/home.dart';
+import 'package:mobile_ecommerce/features/shop/screens/store/store.dart';
 import 'package:mobile_ecommerce/utils/constants/colors.dart';
 import 'package:mobile_ecommerce/utils/helpers/helper_functions.dart';
 
@@ -39,7 +40,7 @@ class NavigationController extends GetxController {
 
   final List<Widget> screens = [
    const  HomeScreen(),
-    Container(child: Text('Store Screen')),
+    const StoreScreen() ,
     Container(child: Text('Wishlist Screen')),
     Container(child: Text('Profile Screen')),
   ];

@@ -33,5 +33,10 @@ class EImages {
   static const String productLegging2 = "assets/images/products/legging_2.jpg";
   static const String productLegging3 = "assets/images/products/legging_3.jpg";
 
+  // Brands
+  static const String nikeBrand = "assets/images/brands/nike.png";
+  static const String adidasBrand = "assets/images/brands/adidas.png";
+
+
 
 }
