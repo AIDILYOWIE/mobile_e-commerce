@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:iconsax_flutter/iconsax_flutter.dart';
 import 'package:mobile_ecommerce/utils/constants/colors.dart';
 import 'package:mobile_ecommerce/utils/constants/sizes.dart';
 import 'package:mobile_ecommerce/utils/device/device_utility.dart';
@@ -9,22 +10,24 @@ import 'package:mobile_ecommerce/utils/helpers/helper_functions.dart';
 class ESearchContainer extends StatelessWidget {
   const ESearchContainer({
     required this.text,
-    this.icon,
+    this.icon = Iconsax.search_normal_copy ,
     this.showBackground = true,
     this.showBorder = true,
     super.key,
+    this.padding = const EdgeInsets.symmetric(horizontal: ESizes.defaultSpace) 
   });
 
   final String text;
   final IconData? icon;
   final bool showBackground, showBorder;
+  final EdgeInsetsGeometry padding;
 
   @override
   Widget build(BuildContext context) {
     final dark = EHelperFunctions.isDarkMode(context);
 
     return Padding(
-      padding: EdgeInsets.symmetric(horizontal: ESizes.defaultSpace),
+      padding: padding,
       child: Container(
         width: EDeviceUtility.getScreenWidth(context),
         padding: const EdgeInsets.all(ESizes.md),

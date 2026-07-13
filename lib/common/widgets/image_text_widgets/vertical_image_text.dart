@@ -30,9 +30,9 @@ class EVerticalImageText extends StatelessWidget {
         child: Column(
           children: [
             Container(
-              width: 56,
-              height: 56,
-              padding: const EdgeInsets.all(ESizes.md),
+              width: 52,
+              height: 52,
+              padding: const EdgeInsets.all(ESizes.xs),
               decoration: BoxDecoration(
                 color: backgroundColor ?? (EHelperFunctions.isDarkMode(context) ? EColors.black : EColors.white),
                 borderRadius: BorderRadius.circular( 
