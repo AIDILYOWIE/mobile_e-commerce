@@ -11,6 +11,7 @@ class EHomeCategories extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
     return SizedBox(
       height: 80,
       child: ListView.builder(
@@ -18,7 +19,7 @@ class EHomeCategories extends StatelessWidget {
         itemCount: 6,
         scrollDirection: Axis.horizontal,
         itemBuilder: (_, index) {
-          return  EVerticalImageText(image: EImages.sportCategorie, title: 'sport', textColor: EColors.white, backgroundColor: EColors.white, onTap: (){},);
+          return  EVerticalImageText(image: EImages.sportCategorie, title: 'sport', textColor: EColors.white, onTap: (){},);
         },
       ),
     );
