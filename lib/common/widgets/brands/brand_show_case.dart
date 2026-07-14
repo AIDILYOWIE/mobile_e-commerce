@@ -3,7 +3,6 @@ import 'package:mobile_ecommerce/common/widgets/brands/brand_card.dart';
 import 'package:mobile_ecommerce/common/widgets/costume_shapes/containers/rounded_container.dart';
 import 'package:mobile_ecommerce/common/widgets/images/e_rounded_image.dart';
 import 'package:mobile_ecommerce/utils/constants/colors.dart';
-import 'package:mobile_ecommerce/utils/constants/image_strings.dart';
 import 'package:mobile_ecommerce/utils/constants/sizes.dart';
 
 class EBrandShowcase extends StatelessWidget {

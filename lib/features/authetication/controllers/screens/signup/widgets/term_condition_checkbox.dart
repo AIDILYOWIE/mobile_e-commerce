@@ -19,18 +19,18 @@ class terms_condition_checkbox extends StatelessWidget {
         Text.rich(
           TextSpan(
             children: [
-              TextSpan(text: '${ETexts.iAgreeTo}', style: Theme.of(context).textTheme.bodySmall),
+              TextSpan(text: ETexts.iAgreeTo, style: Theme.of(context).textTheme.bodySmall),
               TextSpan(
-                text: '${ETexts.privacyPolicy}',
+                text: ETexts.privacyPolicy,
                 style: Theme.of(context).textTheme.bodyMedium!.apply(
                   color: dark ? EColors.white : EColors.primary,
                   decoration: TextDecoration.underline,
                   decorationColor: dark ? EColors.white : EColors.primary,
                 ),
               ),
-              TextSpan(text: '${ETexts.and}', style: Theme.of(context).textTheme.bodySmall),
+              TextSpan(text: ETexts.and, style: Theme.of(context).textTheme.bodySmall),
               TextSpan(
-                text: '${ETexts.termsOfUse}',
+                text: ETexts.termsOfUse,
                 style: Theme.of(context).textTheme.bodyMedium!.apply(
                   color: dark ? EColors.white : EColors.primary,
                   decoration: TextDecoration.underline,

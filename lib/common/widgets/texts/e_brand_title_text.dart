@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:mobile_ecommerce/utils/constants/enums.dart';
-import 'package:mobile_ecommerce/utils/helpers/helper_functions.dart';
 
 class EBrandTitle extends StatelessWidget {
   const EBrandTitle({

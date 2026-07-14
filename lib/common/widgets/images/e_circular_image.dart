@@ -24,6 +24,7 @@ class ECircularImage extends StatelessWidget {
   final Color? backgroundColor;
   final double width, height, padding;
 
+  @override
   Widget build(BuildContext context) {
     // TODO: implement build
     return Container(

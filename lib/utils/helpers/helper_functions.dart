@@ -44,6 +44,7 @@ class EHelperFunctions {
     } else if (value == 'Light Green') {
       return Colors.lightGreen;
     }
+    return null;
   }
 
   static void showSnackBar(String message) {

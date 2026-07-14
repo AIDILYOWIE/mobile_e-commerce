@@ -5,7 +5,6 @@ import 'package:mobile_ecommerce/common/widgets/success/success_screen.dart';
 import 'package:mobile_ecommerce/features/authetication/controllers/screens/login/login.dart';
 import 'package:mobile_ecommerce/utils/constants/image_strings.dart';
 import 'package:mobile_ecommerce/utils/constants/sizes.dart';
-import 'package:iconsax_flutter/iconsax_flutter.dart';
 import 'package:mobile_ecommerce/utils/constants/text_strings.dart';
 import 'package:mobile_ecommerce/utils/helpers/helper_functions.dart';
 

@@ -1,5 +1,4 @@
 import 'package:flutter/cupertino.dart';
-import 'package:mobile_ecommerce/common/widgets/products/product_cards/product_card_vertical.dart';
 import 'package:mobile_ecommerce/utils/constants/sizes.dart';
 
 class EGridLayout extends StatelessWidget {

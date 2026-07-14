@@ -1,8 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:iconsax_flutter/iconsax_flutter.dart';
-import 'package:mobile_ecommerce/app.dart';
 import 'package:mobile_ecommerce/utils/constants/image_strings.dart';
 import 'package:mobile_ecommerce/utils/constants/sizes.dart';
 import 'package:mobile_ecommerce/utils/constants/text_strings.dart';

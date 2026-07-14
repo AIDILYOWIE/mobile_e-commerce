@@ -4,7 +4,6 @@ import 'package:mobile_ecommerce/common/styles/shadows.dart';
 import 'package:mobile_ecommerce/common/widgets/costume_shapes/containers/rounded_container.dart';
 import 'package:mobile_ecommerce/common/widgets/icons/e_circular_icon.dart';
 import 'package:mobile_ecommerce/common/widgets/images/e_rounded_image.dart';
-import 'package:mobile_ecommerce/common/widgets/texts/e_brand_title_text.dart';
 import 'package:mobile_ecommerce/common/widgets/texts/e_brand_title_witb_verified_icon.dart';
 import 'package:mobile_ecommerce/common/widgets/texts/product_price.dart';
 import 'package:mobile_ecommerce/common/widgets/texts/product_title.dart';
@@ -68,7 +67,7 @@ class EProductCardVertical extends StatelessWidget {
                     top: 6,
                     right: 6,
                     child: ECircularIcon(
-                      icon: Iconsax.heart,
+                      icon: Iconsax.heart_copy,
                       width: 32,
                       height: 32,
                     ),
