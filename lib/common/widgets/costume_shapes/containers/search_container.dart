@@ -38,7 +38,7 @@ class ESearchContainer extends StatelessWidget {
                     : EColors.light
               : Colors.transparent,
           borderRadius: BorderRadius.circular(ESizes.cardRadiusLg),
-          border: showBorder ? Border.all(color: EColors.grey) : null,
+          border: showBorder ? EHelperFunctions.isDarkMode(context) ? Border.all(color: EColors.darkGrey) : Border.all(color: EColors.grey) : null,
         ),
         child: Row(
           children: [
