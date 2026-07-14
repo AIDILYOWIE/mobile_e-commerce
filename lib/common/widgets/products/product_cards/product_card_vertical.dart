@@ -69,7 +69,6 @@ class EProductCardVertical extends StatelessWidget {
                     right: 6,
                     child: ECircularIcon(
                       icon: Iconsax.heart,
-                      color: EColors.error,
                       width: 32,
                       height: 32,
                     ),
