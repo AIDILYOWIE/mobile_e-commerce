@@ -9,6 +9,7 @@ import 'package:mobile_ecommerce/common/widgets/images/e_circular_image.dart';
 import 'package:mobile_ecommerce/common/widgets/images/e_rounded_image.dart';
 import 'package:mobile_ecommerce/common/widgets/layouts/grid_layout.dart';
 import 'package:mobile_ecommerce/common/widgets/products/cart/card_menu.dart';
+import 'package:mobile_ecommerce/common/widgets/products/product_cards/product_card_vertical.dart';
 import 'package:mobile_ecommerce/common/widgets/sections/section_heading.dart';
 import 'package:mobile_ecommerce/common/widgets/texts/e_brand_title_witb_verified_icon.dart';
 import 'package:mobile_ecommerce/features/shop/screens/store/widgets/category_tab.dart';
@@ -97,6 +98,7 @@ class StoreScreen extends StatelessWidget {
                 
                 child: Column(
                   children: [
+                    // Brands
                     EBrandShowcase(
                       images: [
                         EImages.productJacket1,
@@ -104,6 +106,13 @@ class StoreScreen extends StatelessWidget {
                         EImages.productLegging1,
                       ],
                     ),
+                    const SizedBox(height: ESizes.spaceBtwItems ,),
+
+                    ESectionHeading(title: "You might like", onPressed: (){},),
+                    const SizedBox(height: ESizes.spaceBtwItems ,),
+
+                    EGridLayout(itemCount: 4, itemBuilder: (_, index) => EProductCardVertical()),
+                    const SizedBox(height: ESizes.spaceBtwSections ,),
                   ],
                 ),
               ),
