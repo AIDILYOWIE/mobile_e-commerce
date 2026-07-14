@@ -9,9 +9,16 @@ class ECategoryTab extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
-    return Padding(
-      padding: const EdgeInsetsGeometry.all(ESizes.defaultSpace),
-      child: child,
+    return ListView(
+      shrinkWrap: true,
+      physics: NeverScrollableScrollPhysics(),
+      
+      children: [
+        Padding(
+          padding: const EdgeInsetsGeometry.all(ESizes.defaultSpace),
+          child: child,
+        ),
+      ],
     );
   }
 }
