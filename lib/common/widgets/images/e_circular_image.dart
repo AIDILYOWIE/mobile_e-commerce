@@ -39,7 +39,7 @@ class ECircularImage extends StatelessWidget {
                 : EColors.white),
         borderRadius: BorderRadius.circular(100),
       ),
-      child: Center(
+      child: ClipOval(
         child: Image(
           fit: fit,
           image: isNetworkImage
