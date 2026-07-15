@@ -37,11 +37,17 @@ class HomeScreen extends StatelessWidget {
 
                   // Categories
                   Padding(
-                    padding: EdgeInsets.symmetric(horizontal: ESizes.defaultSpace),
+                    padding: EdgeInsets.symmetric(
+                      horizontal: ESizes.defaultSpace,
+                    ),
                     child: Column(
                       children: [
                         // Header
-                        ECategorieHeader(title: "Popular Categoris", showActionButton: false, textColor: EColors.white),
+                        ECategorieHeader(
+                          title: "Popular Categoris",
+                          showActionButton: false,
+                          textColor: EColors.white,
+                        ),
                         const SizedBox(height: ESizes.spaceBtwItems),
 
                         // Categories
@@ -49,6 +55,8 @@ class HomeScreen extends StatelessWidget {
                       ],
                     ),
                   ),
+
+                  const SizedBox(height: ESizes.spaceBtwSections), 
                 ],
               ),
             ),
@@ -59,11 +67,20 @@ class HomeScreen extends StatelessWidget {
               child: Column(
                 children: [
                   // Promo slider
-                  EPromoSlider(banners: [EImages.banner1, EImages.banner2, EImages.banner3]),
+                  EPromoSlider(
+                    banners: [
+                      EImages.banner1,
+                      EImages.banner2,
+                      EImages.banner3,
+                    ],
+                  ),
                   const SizedBox(height: ESizes.spaceBtwSections),
 
                   // Product populer
-                  EGridLayout(itemCount: 4, itemBuilder: (_, index) => const EProductCardVertical()),
+                  EGridLayout(
+                    itemCount: 4,
+                    itemBuilder: (_, index) => const EProductCardVertical(),
+                  ),
                 ],
               ),
             ),
@@ -73,5 +90,3 @@ class HomeScreen extends StatelessWidget {
     );
   }
 }
-
-
