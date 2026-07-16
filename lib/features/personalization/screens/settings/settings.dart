@@ -114,7 +114,7 @@ class SettingScreen extends StatelessWidget {
                     trailing: Switch(value: true, onChanged: (value) {}),
                   ),
                   ESettingsMenuTile(
-                    icon: Iconsax.image,
+                    icon: Iconsax.image_copy,
                     title: "HD Image Quality",
                     subTitle: "set image quality to be seen",
                     trailing: Switch(value: true, onChanged: (value) {}),

@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:get/get_navigation/src/extension_navigation.dart';
+import 'package:get/state_manager.dart';
 import 'package:iconsax_flutter/iconsax_flutter.dart';
 import 'package:mobile_ecommerce/common/widgets/images/e_circular_image.dart';
+import 'package:mobile_ecommerce/features/personalization/screens/profile/profile.dart';
 import 'package:mobile_ecommerce/utils/constants/colors.dart';
 
 class EUserProfileTile extends StatelessWidget {
@@ -37,7 +40,7 @@ class EUserProfileTile extends StatelessWidget {
         ).textTheme.bodyMedium!.apply(color: EColors.white),
       ),
       trailing: IconButton(
-        onPressed: () {},
+        onPressed: () => Get.to(const ProfileScreen()) ,
         icon: const Icon(Iconsax.edit_copy, color: EColors.white),
       ),
     );
