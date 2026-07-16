@@ -1,15 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:mobile_ecommerce/common/styles/spacing_styles.dart';
 import 'package:mobile_ecommerce/common/widgets/login_signup/form_divider.dart';
 import 'package:mobile_ecommerce/features/authetication/controllers/screens/login/widgets/login_form.dart';
 import 'package:mobile_ecommerce/features/authetication/controllers/screens/login/widgets/login_header.dart';
-import 'package:mobile_ecommerce/utils/constants/colors.dart';
-import 'package:mobile_ecommerce/utils/constants/image_strings.dart';
 import 'package:mobile_ecommerce/utils/constants/sizes.dart';
 import 'package:mobile_ecommerce/utils/constants/text_strings.dart';
 import 'package:mobile_ecommerce/utils/helpers/helper_functions.dart';
-import 'package:iconsax_flutter/iconsax_flutter.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});

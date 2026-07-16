@@ -1,13 +1,10 @@
-import 'package:carousel_slider/carousel_options.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 import 'package:mobile_ecommerce/common/widgets/costume_shapes/containers/circular_container.dart';
 import 'package:mobile_ecommerce/common/widgets/images/e_rounded_image.dart';
 import 'package:mobile_ecommerce/features/shop/controllers/home_controller.dart';
 import 'package:mobile_ecommerce/utils/constants/colors.dart';
-import 'package:mobile_ecommerce/utils/constants/image_strings.dart';
 import 'package:mobile_ecommerce/utils/constants/sizes.dart';
 
 class EPromoSlider extends StatelessWidget {

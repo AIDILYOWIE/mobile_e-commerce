@@ -1,9 +1,5 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:mobile_ecommerce/common/styles/spacing_styles.dart';
-import 'package:mobile_ecommerce/features/authetication/controllers/screens/login/login.dart';
-import 'package:mobile_ecommerce/utils/constants/image_strings.dart';
 import 'package:mobile_ecommerce/utils/constants/sizes.dart';
 import 'package:mobile_ecommerce/utils/constants/text_strings.dart';
 import 'package:mobile_ecommerce/utils/helpers/helper_functions.dart';

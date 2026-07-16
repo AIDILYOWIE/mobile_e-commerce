@@ -1,10 +1,6 @@
-import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
-import 'package:iconsax_flutter/iconsax_flutter.dart';
-import 'package:mobile_ecommerce/common/widgets/costume_shapes/containers/circular_container.dart';
 import 'package:mobile_ecommerce/common/widgets/costume_shapes/containers/primary_header_containers.dart';
 import 'package:mobile_ecommerce/common/widgets/costume_shapes/containers/search_container.dart';
-import 'package:mobile_ecommerce/common/widgets/images/e_rounded_image.dart';
 import 'package:mobile_ecommerce/common/widgets/layouts/grid_layout.dart';
 import 'package:mobile_ecommerce/common/widgets/products/product_cards/product_card_vertical.dart';
 import 'package:mobile_ecommerce/common/widgets/texts/section_heading.dart';
@@ -34,7 +30,6 @@ class HomeScreen extends StatelessWidget {
                   // Search Bar
                   ESearchContainer(
                     text: 'Search in store',
-                    icon: Iconsax.search_normal_copy,
                     showBorder: true,
                     showBackground: true,
                   ),
@@ -42,11 +37,17 @@ class HomeScreen extends StatelessWidget {
 
                   // Categories
                   Padding(
-                    padding: EdgeInsets.symmetric(horizontal: ESizes.defaultSpace),
+                    padding: EdgeInsets.symmetric(
+                      horizontal: ESizes.defaultSpace,
+                    ),
                     child: Column(
                       children: [
                         // Header
-                        ECategorieHeader(title: "Popular Categoris", showActionButton: false, textColor: EColors.white),
+                        ECategorieHeader(
+                          title: "Popular Categoris",
+                          showActionButton: false,
+                          textColor: EColors.white,
+                        ),
                         const SizedBox(height: ESizes.spaceBtwItems),
 
                         // Categories
@@ -54,6 +55,8 @@ class HomeScreen extends StatelessWidget {
                       ],
                     ),
                   ),
+
+                  const SizedBox(height: ESizes.spaceBtwSections), 
                 ],
               ),
             ),
@@ -64,11 +67,20 @@ class HomeScreen extends StatelessWidget {
               child: Column(
                 children: [
                   // Promo slider
-                  EPromoSlider(banners: [EImages.banner1, EImages.banner2, EImages.banner3]),
+                  EPromoSlider(
+                    banners: [
+                      EImages.banner1,
+                      EImages.banner2,
+                      EImages.banner3,
+                    ],
+                  ),
                   const SizedBox(height: ESizes.spaceBtwSections),
 
                   // Product populer
-                  EGridLayout(itemCount: 4, itemBuilder: (_, index) => const EProductCardVertical()),
+                  EGridLayout(
+                    itemCount: 4,
+                    itemBuilder: (_, index) => const EProductCardVertical(),
+                  ),
                 ],
               ),
             ),
@@ -78,5 +90,3 @@ class HomeScreen extends StatelessWidget {
     );
   }
 }
-
-

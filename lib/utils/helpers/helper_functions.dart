@@ -44,6 +44,7 @@ class EHelperFunctions {
     } else if (value == 'Light Green') {
       return Colors.lightGreen;
     }
+    return null;
   }
 
   static void showSnackBar(String message) {
@@ -86,7 +87,7 @@ class EHelperFunctions {
   }
 
   static bool isDarkMode(BuildContext context) {
-    return Theme.of(  context).brightness == Brightness.dark;
+    return Theme.of(context).brightness == Brightness.dark;
   }
 
   static Size screenSize() {

@@ -1,9 +1,8 @@
 import 'package:flutter/cupertino.dart';
-import 'package:mobile_ecommerce/common/widgets/products/product_cards/product_card_vertical.dart';
 import 'package:mobile_ecommerce/utils/constants/sizes.dart';
 
 class EGridLayout extends StatelessWidget {
-  const EGridLayout({super.key, required this.itemCount, this.mainAxisExtent = 250, required this.itemBuilder});
+  const EGridLayout({super.key, required this.itemCount, this.mainAxisExtent = 260, required this.itemBuilder});
 
   final int itemCount;
   final double? mainAxisExtent;
