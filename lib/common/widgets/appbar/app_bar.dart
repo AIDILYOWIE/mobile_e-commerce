@@ -29,7 +29,7 @@ class EAppBar extends StatelessWidget implements PreferredSizeWidget {
         leading: showBackArrow
             ? IconButton(
                 onPressed: () => Get.back(),
-                icon: Icon(Iconsax.arrow_left),
+                icon: Icon(Iconsax.arrow_left_copy),
               )
             : leadingIcon != null
             ? IconButton(onPressed: leadingOnPressed, icon: Icon(leadingIcon))
