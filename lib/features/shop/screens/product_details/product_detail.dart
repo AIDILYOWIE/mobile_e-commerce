@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get_core/src/get_main.dart';
+import 'package:get/get_navigation/src/extension_navigation.dart';
 import 'package:iconsax_flutter/iconsax_flutter.dart';
 import 'package:mobile_ecommerce/common/widgets/sections/section_heading.dart';
 import 'package:mobile_ecommerce/features/shop/screens/product_details/widgets/bottom_add_to_cart_widget.dart';
@@ -6,6 +8,7 @@ import 'package:mobile_ecommerce/features/shop/screens/product_details/widgets/p
 import 'package:mobile_ecommerce/features/shop/screens/product_details/widgets/product_attributes.dart';
 import 'package:mobile_ecommerce/features/shop/screens/product_details/widgets/product_detail_image_slider.dart';
 import 'package:mobile_ecommerce/features/shop/screens/product_details/widgets/product_meta_data.dart';
+import 'package:mobile_ecommerce/features/shop/screens/product_reviews/product_reviews.dart';
 import 'package:mobile_ecommerce/utils/constants/sizes.dart';
 import 'package:readmore/readmore.dart';
 
@@ -57,7 +60,7 @@ class ProductDetail extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       const ESectionHeading(title: 'Reviews (2202)', showActionButton: false,),
-                      IconButton(onPressed: (){}, icon: Icon(Iconsax.arrow_right_3_copy))
+                      IconButton(onPressed: () => Get.to(const EProductReview() ) , icon: Icon(Iconsax.arrow_right_3_copy))
                     ],
                   )
 
