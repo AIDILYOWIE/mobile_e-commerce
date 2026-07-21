@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get_core/src/get_main.dart';
+import 'package:get/get_navigation/src/extension_navigation.dart';
 import 'package:iconsax_flutter/iconsax_flutter.dart';
 import 'package:mobile_ecommerce/common/styles/shadows.dart';
 import 'package:mobile_ecommerce/common/widgets/costume_shapes/containers/rounded_container.dart';
@@ -7,6 +9,7 @@ import 'package:mobile_ecommerce/common/widgets/images/e_rounded_image.dart';
 import 'package:mobile_ecommerce/common/widgets/texts/e_brand_title_witb_verified_icon.dart';
 import 'package:mobile_ecommerce/common/widgets/texts/product_price.dart';
 import 'package:mobile_ecommerce/common/widgets/texts/product_title.dart';
+import 'package:mobile_ecommerce/features/shop/screens/product_details/product_detail.dart';
 import 'package:mobile_ecommerce/utils/constants/colors.dart';
 import 'package:mobile_ecommerce/utils/constants/image_strings.dart';
 import 'package:mobile_ecommerce/utils/constants/sizes.dart';
@@ -19,7 +22,7 @@ class EProductCardVertical extends StatelessWidget {
   Widget build(BuildContext context) {
     final dark = EHelperFunctions.isDarkMode(context);
     return GestureDetector(
-      onTap: () {},
+      onTap: () => Get.to(const ProductDetail()),
       child: Container(
         width: 160,
         decoration: BoxDecoration(

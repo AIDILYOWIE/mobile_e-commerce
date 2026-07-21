@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get_core/src/get_main.dart';
+import 'package:get/get_navigation/src/extension_navigation.dart';
 import 'package:iconsax_flutter/iconsax_flutter.dart';
 import 'package:mobile_ecommerce/common/widgets/appbar/app_bar.dart';
 import 'package:mobile_ecommerce/common/widgets/costume_shapes/containers/primary_header_containers.dart';
@@ -6,6 +8,7 @@ import 'package:mobile_ecommerce/common/widgets/images/e_circular_image.dart';
 import 'package:mobile_ecommerce/common/widgets/list_tile/settings_menu_tile.dart';
 import 'package:mobile_ecommerce/common/widgets/list_tile/user_profile_tile.dart';
 import 'package:mobile_ecommerce/common/widgets/sections/section_heading.dart';
+import 'package:mobile_ecommerce/features/personalization/screens/address/address.dart';
 import 'package:mobile_ecommerce/utils/constants/colors.dart';
 import 'package:mobile_ecommerce/utils/constants/image_strings.dart';
 import 'package:mobile_ecommerce/utils/constants/sizes.dart';
@@ -57,6 +60,7 @@ class SettingScreen extends StatelessWidget {
                     icon: Iconsax.safe_home_copy,
                     title: "My Address",
                     subTitle: "Set shooping delivery address",
+                    onTap: () => Get.to(const AddressScreen()),
                   ),
                   ESettingsMenuTile(
                     icon: Iconsax.shopping_cart_copy,
